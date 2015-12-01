@@ -1,0 +1,37 @@
+https://www.000webhost.com/free-php-hosting
+
+Servername: server39.000webhost.com
+Subdomain: www.carvlos.netai.net
+name: test
+email: micelandroid10@gmail.com
+Pass: android10
+
+****** https://members.000webhost.com/login ******
+Account: carvlos.netai.net
+Username: a5367352
+
+****** MySQL ******
+MySQL database name: a5367352_db
+MySQL user name: a5367352_root
+Password for MySQL user: android10
+MySQL Host (SERVER): mysql13.000webhost.com
+Language: English (utf-8)
+
+
+*** General Account Details ***
+Domain: carvlos.netai.net
+IP Address: 31.170.160.103
+Username: a5367352
+Password: android10
+
+*** File Upload Details ***
+FTP Hostname: ftp.carvlos.netai.net or 31.170.160.103
+FTP Username: a5367352
+FTP Passsword: android10
+
+*** MySQL Details ***
+Use mysql host 'mysql13.000webhost.com' for your PHP scripts.
+MySQL databases and users can be setup from control panel.
+
+*** Files must be uploaded to 'public_html' folder. ***
+If you are not using FTP, you can access web based file manager from control panel.
