@@ -12,11 +12,6 @@ void setup() {
 
 void loop() {
   dist = analogRead(0);
-  if(dist == 694 or dist == 695 ) //If the value is 694 or 695 both pieces are together.
-    {
       Serial.println(dist);
-    }else{
-     //Serial.println();
-    }
-  delay(100);
+  delay(300);
 }

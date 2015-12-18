@@ -69,6 +69,9 @@ void loop(){
         if(pro > 400 &&  (proLast > (pro+50) || proLast < 70)    ||    pro < 70 &&  proLast > (pro+50))  //Rang between -/+ 50
           {
             proLast = pro;
+            if (pro>400){
+              beep();
+            }
             Serial.println("pro =" + pro);
             doPost(0, String (pro)); //(sendor,value) SENSOR = Type of sensor where 0 = pro ; 1 = mag ; mic = 2.
           }
@@ -82,6 +85,7 @@ void loop(){
             doPost(1, String (mag)); //(sendor,value) SENSOR = Type of sensor where 0 = pro ; 1 = mag ; mic = 2.
           }else if(mag < 694 || mag > 695 && (magLast == 694 && magLast == 695)){
             magLast = mag;
+            beep();
             Serial.println("mag =" + mag);
             doPost(1, String (mag)); //(sendor,value) SENSOR = Type of sensor where 0 = pro ; 1 = mag ; mic = 2.
           }
@@ -186,6 +190,65 @@ String getMAC(){
    //FROM INTERNET
   //String thisString = String(13, HEX);
   return String( macAdress );
+}
+
+
+void beep (){
+  analogWrite(9, 20);      // Almost any value can be used except 0 and 255
+  delay(50);          // wait for a delayms ms
+  analogWrite(9, 0);       // 0 turns it off
+  delay(50);          // wait for a delayms ms
+  analogWrite(9, 20);
+  delay(50);
+  analogWrite(9, 0);
+  delay(50);
+  analogWrite(9, 20);
+  delay(50);
+  analogWrite(9, 0);
+  delay(50);
+
+  delay(1000);
+  
+  analogWrite(9, 20);
+  delay(200);
+  analogWrite(9, 0);
+  delay(200);
+  analogWrite(9, 20);
+  delay(200);
+  analogWrite(9, 0);
+  delay(200);
+  analogWrite(9, 20);
+  delay(200);
+  analogWrite(9, 0);
+  delay(200);
+  analogWrite(9, 20);
+  delay(200);
+  analogWrite(9, 0);
+  delay(200);
+  analogWrite(9, 20);
+  delay(200);
+  analogWrite(9, 0);
+  delay(200);
+  analogWrite(9, 20);
+  delay(200);
+  analogWrite(9, 0);
+  delay(200);
+  analogWrite(9, 20);
+  delay(200);
+  analogWrite(9, 0);
+  delay(200);
+  analogWrite(9, 20);
+  delay(200);
+  analogWrite(9, 0);
+  delay(200);
+  analogWrite(9, 20);
+  delay(200);
+  analogWrite(9, 0);
+  delay(200);
+  analogWrite(9, 20);
+  delay(200);
+  analogWrite(9, 0);
+  delay(200);
 }
 
 

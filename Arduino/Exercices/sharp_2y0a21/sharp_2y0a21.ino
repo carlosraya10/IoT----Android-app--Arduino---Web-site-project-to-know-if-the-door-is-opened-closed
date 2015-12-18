@@ -20,5 +20,5 @@ void loop() {
     }
   //Serial.println(analogRead(2));
   //Serial.println(analogRead(0));
-  delay(50);
+  delay(150);
 }

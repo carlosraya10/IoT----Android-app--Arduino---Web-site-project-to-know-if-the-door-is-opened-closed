@@ -15,10 +15,10 @@ int value = analogRead(soundPin);
  {
   //Serial.print("*");
  }
- if (value > 200){
+ if (value > 350){
    Serial.println();
    Serial.println(value); // print value for checking purposes
-    delay(3000);
+    //delay(3000);
  }
  delay(100);
 }
